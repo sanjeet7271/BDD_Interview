@@ -8,13 +8,26 @@
       iii.) TestRunner: .java is the file extension for this file. It connects the feature file and the step definition file. It allows the user to run one or more feature files
             at the same time. It contains the locations of the step definition and feature files.
  ## Annotations in Cucumber
-       i.) Given: It specifies the requirements for running the test.
+       i.) Feature: The Feature keyword's aim is to collect relevant scenarios and provide a high-level description of a software feature.
+       ii.) Rule: The Rule keyword is used to express a single business rule that should be followed. It adds to the information about a feature.
+       iii.) Example: This is a practical illustration of a business rule. It comprises a series of steps.
+       iv.) Background: A background helps you to give the situations that follow it some context. It can have one or more Given steps, which are executed prior to each scenario
+            but after any Before hooks.
+       v.) Given: It specifies the requirements for running the test.
                 Example: Given I have an account on facebook.
-       ii.) When: It establishes the starting point for any test scenario.
+       vi.) When: It establishes the starting point for any test scenario.
                   Example: When I log in to facebook.
-       iii.) Then: It contains the expected result of the test which is to be executed.
+       vii.) Then: It contains the expected result of the test which is to be executed.
                   Example: Then registration should be successful.
-       iv.) And: Between any two statements, it gives the logical AND condition. AND can be combined with the GIVEN, WHEN, and THEN statements.
+       viii.) And: Between any two statements, it gives the logical AND condition. AND can be combined with the GIVEN, WHEN, and THEN statements.
                 Example: When I enter my account number AND CVV. 
-       v.) But: It denotes a logical OR relationship between two propositions. OR can be combined with the GIVEN, WHEN, and THEN statements.
+       ix.) But: It denotes a logical OR relationship between two propositions. OR can be combined with the GIVEN, WHEN, and THEN statements.
                 Example: Then I should be logged in BUT I must enter the OTP.
+
+  ## Hooks in Cucumber
+      i.) Hooks are code blocks that execute before or after each Cucumber scenario in the execution cycle
+      ii.) Certain preconditions, such as executing the program, creating a database connection, preparing the test data, and so on, may be required in some cases. There are also
+           several postconditions to be fulfilled, such as ending the database connection, closing the browser, refreshing test data, and logging out of the program. Cucumber
+           handles all of these situations with the use of hooks.
+      iii.) The methods @Before and @After can be used to define hooks anywhere in the project or step definition layers. Before hook is executed before any other test situations,
+            and after the hook is executed after all test scenarios have been completed
