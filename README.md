@@ -23,6 +23,10 @@
                 Example: When I enter my account number AND CVV. 
        ix.) But: It denotes a logical OR relationship between two propositions. OR can be combined with the GIVEN, WHEN, and THEN statements.
                 Example: Then I should be logged in BUT I must enter the OTP.
+        x.) Scenario: Scenario is a fundamental Gherkin structure. Every scenario begins with the keyword "Scenario:" (or a localized version of it) and ends with a scenario
+             title. Every feature can have one or more scenarios, each of which has one or more steps. 
+        xi.) Scenario Outline: Consider the situation when we need to run a test scenario multiple times. Assume we need to ensure that the login feature is functional for
+             all types of subscribers.
 
   ## Hooks in Cucumber
       i.) Hooks are code blocks that execute before or after each Cucumber scenario in the execution cycle
