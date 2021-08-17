@@ -35,3 +35,7 @@
            handles all of these situations with the use of hooks.
       iii.) The methods @Before and @After can be used to define hooks anywhere in the project or step definition layers. Before hook is executed before any other test situations,
             and after the hook is executed after all test scenarios have been completed
+  
+  ##  In a feature file, what is the maximum number of scenarios?
+        A feature file in Cucumber can include a maximum of 10 scenarios. This quantity can differ from one project to the next and from one organization to the next.
+        It's advisable to keep the number of scenarios in the feature file to a minimum
