@@ -1,5 +1,16 @@
 # BDD Interview
-  ## Enlist the files needed in the Cucumber framework
+ ## Cucumber Examples
+    Feature: Account Holder withdraws cash
+    Scenario: Account has sufficient funds
+     Given the account balance is $100
+       And the card is valid
+       And the machine contains enough money  
+      When the Account Holder requests $20
+      Then the ATM should dispense $20
+       And the account balance should be $80
+       And the card should be returned
+
+ ## Enlist the files needed in the Cucumber framework
       i.) Feature File: It has plain text descriptions of single or numerous test situations.
          Keywords like Then, When, Background, Scenario Outline, Feature, And, But, and so on are used in the tests. As a result, it's a file that keeps track of features 
          and their descriptions.
