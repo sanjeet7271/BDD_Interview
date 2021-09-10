@@ -50,3 +50,24 @@
   ##  In a feature file, what is the maximum number of scenarios?
         A feature file in Cucumber can include a maximum of 10 scenarios. This quantity can differ from one project to the next and from one organization to the next.
         It's advisable to keep the number of scenarios in the feature file to a minimum
+        
+  
+  ## Runner File
+       @RunWith(Cucumber.class)
+       @CucumberOptions(
+               features =  {
+                       "src/test/java/com/features/fpos/admin",
+               },
+               glue = {
+                       "com.stepdefinitions"
+               },
+               monochrome = true,
+               tags =  {
+                       "@fpos_smoke"
+               },
+               plugin = {"pretty",
+                       "html:target/cucumber",
+                       "json:target/cucumber-report/cucumber.json",
+                       "json:target/cucumber.json",
+                       "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: target/report.html"}
+       )
