@@ -2,6 +2,9 @@
 ## DOM structure below
 ![image](https://user-images.githubusercontent.com/45819133/133214432-4eb09619-1850-41f9-82d1-5b4f0f62a85f.png)
 
+![image](https://user-images.githubusercontent.com/45819133/133216151-c85ba2ba-26dd-4030-aeca-39d9c0944960.png)
+
+
     According to the Image, there are 3 shadow-roots in the given DOM structure. Each shadow DOM resides in another shadow DOM. Input field is available in the third shadow DOM.
     => First we have to locate attached element of first shadow-root which is **“settings-ui”**.
       => WebElement attachedElement1 = driver.findElement(By.tagName("settings-ui"));
