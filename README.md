@@ -71,3 +71,7 @@
                        "json:target/cucumber.json",
                        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: target/report.html"}
        )
+       
+      
+## How to execute test cases parallel in BDD
+Answer : "https://cucumber.io/docs/guides/parallel-execution/"
